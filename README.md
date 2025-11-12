@@ -1,6 +1,8 @@
 # OpenCV Tutorials
 
-This repository contains Python scripts that carry out tutorials for various modules in OpenCV. It makes use of both free `(opencv)` and non-free `(opencv_contrib)` packages, and therefore, requires compilation of OpenCV from source. A setup script is provided that handles this compilation and cleanup.
+This repository contains **Python** scripts that carry out tutorials for various modules in OpenCV. It makes use of both free `(opencv)` and non-free `(opencv_contrib)` packages, and therefore, requires compilation of OpenCV from source. A setup script is provided that handles this compilation and cleanup.
+
+The tutorials are based on https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html.
 
 ## First-Time Installation Guide
 
@@ -51,3 +53,24 @@ Each tutorial consists of a folder with a `main.py` script, and optionally some 
 
 ```python3 your_script_name.py```
 
+## Cleaning up
+
+If you want to remove the installed environment and binaries (potentially to do a clean install), use the provided `cleanup.sh` script. 
+
+```
+cd <your-target-directory>/opencv-tutorials
+
+chmod +x cleanup.sh
+
+./cleanup.sh
+```
+
+Now, you can rerun `setup.sh` as shown in the **First-Time Installation Guide**, if you want to re-install this project. 
+
+Or, if you want to completely remove this project,
+
+```
+cd <your-target-directory>
+
+rm -rf opencv-tutorials
+```
