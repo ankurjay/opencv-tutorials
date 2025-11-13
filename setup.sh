@@ -40,6 +40,13 @@ source "$INSTALL_DIR/bin/activate"
 # Ensure numpy is in its latest version
 pip install --upgrade numpy
 
+# Install Jupyter Notebook
+pip install --upgrade notebook
+
+# Register the opencv_env as a Python kernel that can be used in the Jupyter Notebook
+pip install ipykernel
+python -m ipykernel install --user --name=opencv_env --display-name "Python (opencv_env)"
+
 
 #---------- Download OpenCV Source Code ----------
 mkdir -p "$OPENCV_SRC_DIR"
