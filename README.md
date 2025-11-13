@@ -49,7 +49,22 @@ You will see `(opencv_env)` appear at the start of your terminal prompt, indicat
 
 ## Running a Tutorial
 
-Each tutorial consists of a folder with a `main.py` script, and optionally some image/video files that are used in the tutorial. Once you have an activated environment, you can run the script normally like this:
+Each tutorial consists of a folder with a `main.py` script, a `notebook.ipynb` Jupyter Notebook, and optionally some image/video files that are used in the tutorial. 
+
+### Option 1 : Running Jupyter Notebooks (Recommended)
+
+This method is recommended for readability, as there are some notes and explanations that are provided within the notebook, separate from the code.
+
+Once you have an activated environment, you can launch a Jupyter Notebook in the `opencv-tutorials` folder like this:
+
+```jupyter notebook```
+
+This will open a browser window in which you can navigate the various directories in this folder, and open the `.ipynb` of your choice directly.
+ 
+
+### Option 2: Running Python Scripts
+
+Once you have an activated environment, you can run a script normally like this:
 
 ```python3 your_script_name.py```
 
@@ -74,3 +89,8 @@ cd <your-target-directory>
 
 rm -rf opencv-tutorials
 ```
+
+
+## Markdown Preview in VS Code
+
+If you are using VS Code, you can view the rendered markdown files using `Ctrl + Shift + V`
