@@ -3,6 +3,7 @@
 This repository contains **Python** scripts that carry out tutorials for various modules in OpenCV. It makes use of both free `(opencv)` and non-free `(opencv_contrib)` packages, and therefore, requires compilation of OpenCV from source. A setup script is provided that handles this compilation and cleanup.
 
 The tutorials are based on https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html.
+Sample images used in the tutorials come from https://github.com/opencv/opencv/tree/master/samples/data.
 
 ## First-Time Installation Guide
 
@@ -51,9 +52,15 @@ You will see `(opencv_env)` appear at the start of your terminal prompt, indicat
 
 Each tutorial consists of a folder with a `main.py` script, a `notebook.ipynb` Jupyter Notebook, and optionally some image/video files that are used in the tutorial. 
 
-### Option 1 : Running Jupyter Notebooks (Recommended)
+### Option 1: Running Python Scripts (Recommended)
 
-This method is recommended for readability, as there are some notes and explanations that are provided within the notebook, separate from the code.
+Once you have an activated environment, you can run a script normally like this:
+
+```python3 your_script_name.py```
+
+
+### Option 2 : Running Jupyter Notebooks
+
 
 Once you have an activated environment, you can launch a Jupyter Notebook in the `opencv-tutorials` folder like this:
 
@@ -61,12 +68,10 @@ Once you have an activated environment, you can launch a Jupyter Notebook in the
 
 This will open a browser window in which you can navigate the various directories in this folder, and open the `.ipynb` of your choice directly.
  
+> Jupyter Notebooks need some workarounds to work with some OpenCV functions. For example, OpenCV's `cv2.imshow()` opens up a separate GUI window, which isn't supported by Jupyter. So we need to `matplotlib` instead. However, `matplotlib.imshow()` expects images in `RGB` format, while OpenCV loads images in `BGR` format. So we need to apply a conversion, without which, the colors will look off.
+>
+> Jupyter Notebooks also don't support real-time playback of video frames. You can show single frames and loop through them. 
 
-### Option 2: Running Python Scripts
-
-Once you have an activated environment, you can run a script normally like this:
-
-```python3 your_script_name.py```
 
 ## Cleaning up
 
