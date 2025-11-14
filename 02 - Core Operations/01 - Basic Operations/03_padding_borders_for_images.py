@@ -7,7 +7,7 @@ BLUE = [255, 0, 0]
 BORDER_WIDTH = 20
 
 # Read the Image
-img = cv.imread('data/opencv-logo.png')
+img = cv.imread('../data/opencv-logo.png')
 
 # Check if the image was loaded correctly
 if img is None:

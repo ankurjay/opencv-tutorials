@@ -3,7 +3,7 @@ import cv2 as cv
 import sys
 
 # Load a color image
-img = cv.imread("data/messi5.jpg")
+img = cv.imread("../data/messi5.jpg")
 
 # Check if the image was loaded correctly
 if img is None:
