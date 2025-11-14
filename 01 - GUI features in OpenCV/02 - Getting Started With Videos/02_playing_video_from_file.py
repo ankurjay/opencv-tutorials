@@ -4,7 +4,7 @@ import cv2 as cv
 # Create a VideoCapture object. 
 # The constructor takes an argument : device name or name of video file.
 # In this case we specify the file name
-cap = cv.VideoCapture('data/vtest.avi')
+cap = cv.VideoCapture('../data/vtest.avi')
 
 
 # If the capture could not be initialized for some reason, exit

@@ -4,7 +4,7 @@ import sys
 import cv2 as cv
 
 # Read the image into a numpy array
-img = cv.imread("data/starry_night.jpg")
+img = cv.imread("../data/starry_night.jpg")
 
 
 # Check if the image was loaded correctly
