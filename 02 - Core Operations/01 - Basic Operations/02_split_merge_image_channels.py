@@ -1,8 +1,13 @@
 import numpy as np
 import cv2 as cv
+import sys
 
 # Load a color image
 img = cv.imread("data/messi5.jpg")
+
+# Check if the image was loaded correctly
+if img is None:
+    sys.exit("Could not read the image!")
 
 
 # ---------- Splitting and Merging channels -------
