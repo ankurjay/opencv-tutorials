@@ -40,6 +40,9 @@ source "$INSTALL_DIR/bin/activate"
 # Ensure numpy is in its latest version
 pip install --upgrade numpy
 
+# Install Matplotlib
+pip install --upgrade matplotlib
+
 # Install Jupyter Notebook
 pip install --upgrade notebook
 
